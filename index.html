@@ -168,7 +168,7 @@
           </div>
         </div>
 
-        <form class="estimate-form" action="https://usebasin.com/f/831cf9ec4fce" method="post" enctype="multipart/form-data">
+        <form class="estimate-form" action="https://usebasin.com/f/831cf9ec4fce" method="post" enctype="multipart/form-data" data-basin-form data-basin-success-action="render">
           <label>Name<input name="Name" required autocomplete="name"></label>
           <label>Email<input type="email" name="Email" required autocomplete="email"></label>
           <label>Phone<input type="tel" name="Phone" autocomplete="tel"></label>
@@ -186,7 +186,9 @@
             <textarea name="Project Details" rows="5" placeholder="Tell us about the project, approximate size, timeline, and any testing already completed."></textarea></label>
           <label class="full">Upload Photos or Documents<input type="file" name="Attachments[]" accept=".jpg,.jpeg,.png,.pdf" multiple></label>          
           <button class="btn full" type="submit">Send Estimate Request</button>
-            <p class="form-note full">You can upload photos, project documents, or asbestos reports if available.</p>
+            <p class="form-note full">You can upload photos, project documents, or asbestos reports if available.</p
+          >div class="w-form-done" style="display: none;">Thank you! Your estimate request has been recived. Rod Solutions will contact you shortly.</div>
+      <div class="w-form-fail" style="display: none;">something went wrong. please try again or contact Rod Solutions directly.</div>
         </form>
       </div>
     </section>
@@ -204,5 +206,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://js.usebasin.com/v2.11.1.min.js" defer></script>
 </body>
 </html>
