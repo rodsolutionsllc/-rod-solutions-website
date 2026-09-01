@@ -168,7 +168,7 @@
           </div>
         </div>
 
-<form class="estimate-form" action="http://usebasin.com/f/831cf9ec4fce" method="post" enctype="multipart/form-data" data-basin-form data-basin-success-action="render" data-basin-success-id="estimate-success" data-basin-error-id="estimate-error">      
+<form class="estimate-form" action="http://usebasin.com/f/831cf9ec4fce" method="post" enctype="multipart/form-data" data-basin-form data-basin-success-action="render">    
           <label>Name<input name="Name" required autocomplete="name"></label>
           <label>Email<input type="email" name="Email" required autocomplete="email"></label>
           <label>Phone<input type="tel" name="Phone" autocomplete="tel"></label>
@@ -186,12 +186,12 @@
             <textarea name="Project Details" rows="5" placeholder="Tell us about the project, approximate size, timeline, and any testing already completed."></textarea></label>
           <label class="full">Upload Photos or Documents<input type="file" name="Attachments[]" accept=".jpg,.jpeg,.png,.pdf" multiple></label>          
           <button class="btn full" type="submit">Send Estimate Request</button>
-            <p class="form-note full">You can upload photos, project documents, or asbestos reports if available.</p
+            <p class="form-note full">You can upload photos, project documents, or asbestos reports if available.</p>
           
       
         </form>
-<div id="estimate-success" style="display: none;">Thank you! Your estimate request has been received. Rod Solutions will contact you shortly.</div> 
-<div id="estimate-error" style="display: none;">Something went wrong. Please try again or contact Rod Solutions directly.</div>
+<div class="w-form-done" style="display: none;">Thank you! Your estimate request has been received. Rod Solutions will contact you shortly.</div> 
+<div class="w-form-fail" style="display: none;">Something went wrong. Please try again or contact Rod Solutions directly.</div>
       </div>
     </section>
   </main>
