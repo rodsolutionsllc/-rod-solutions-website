@@ -99,3 +99,40 @@ h1,h2,h3{line-height:1.08;margin:0 0 18px;letter-spacing:-.035em}h1{font-size:cl
     grid-template-columns:1fr;
   }
 }
+/* Licenses & Insurance */
+.credentials-section{
+  background:var(--bg);
+}
+
+.credentials-section h2{
+  max-width:760px;
+  margin-bottom:34px;
+}
+
+.credentials-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.credentials-grid > div{
+  background:var(--bg2);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:28px;
+  line-height:1.65;
+  box-shadow:0 12px 30px rgba(0,0,0,.16);
+}
+
+.credentials-grid strong{
+  display:block;
+  color:var(--gold);
+  font-size:1.02rem;
+  margin-bottom:4px;
+}
+
+@media(max-width:900px){
+  .credentials-grid{
+    grid-template-columns:1fr;
+  }
+}
